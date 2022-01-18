@@ -2,54 +2,57 @@ import React from 'react';
 import Styles from './styles.module.css';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { Box, styled } from '@mui/system';
+import {
+	Box,
+	// styled
+} from '@mui/system';
 
-const StyledBoxRight = styled(Box)`
-	background-color: #ffffff;
-	width: 40.67px !important;
-	height: 40.67px !important;
-	color: #1e1e1e;
-	transition: all 0.5s;
-	border-radius: 50% !important;
-	position: absolute !important;
-	right: 10px;
-	z-index: 1;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	&:hover {
-		background-color: #484848;
-		color: #fff;
-	}
-	&:focus {
-		background-color: #484848;
-		color: #fff;
-	}
-`;
-const StyledBoxLeft = styled(Box)`
-	background-color: #ffffff;
-	width: 40.67px !important;
-	height: 40.67px !important;
-	color: #1e1e1e;
-	transition: all 0.5s;
-	border-radius: 50% !important;
-	position: absolute !important;
-	left: 10px;
-	z-index: 1;
-	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	&:hover {
-		background-color: #484848;
-		color: #fff;
-	}
-	&:focus {
-		background-color: #484848;
-		color: #fff;
-	}
-`;
+// const StyledBoxRight = styled(Box)`
+// 	background-color: #ffffff;
+// 	width: 40.67px !important;
+// 	height: 40.67px !important;
+// 	color: #1e1e1e;
+// 	transition: all 0.5s;
+// 	border-radius: 50% !important;
+// 	position: absolute !important;
+// 	right: 10px;
+// 	z-index: 1;
+// 	cursor: pointer;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	&:hover {
+// 		background-color: #484848;
+// 		color: #fff;
+// 	}
+// 	&:focus {
+// 		background-color: #484848;
+// 		color: #fff;
+// 	}
+// `;
+// const StyledBoxLeft = styled(Box)`
+// 	background-color: #ffffff;
+// 	width: 40.67px !important;
+// 	height: 40.67px !important;
+// 	color: #1e1e1e;
+// 	transition: all 0.5s;
+// 	border-radius: 50% !important;
+// 	position: absolute !important;
+// 	left: 10px;
+// 	z-index: 1;
+// 	cursor: pointer;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	&:hover {
+// 		background-color: #484848;
+// 		color: #fff;
+// 	}
+// 	&:focus {
+// 		background-color: #484848;
+// 		color: #fff;
+// 	}
+// `;
 
 function index(props) {
 	const responsive = {
@@ -72,30 +75,30 @@ function index(props) {
 		},
 	};
 
-	const CustomRightArrow = ({ onClick, ...rest }) => {
-		const {
-			onMove,
-			carouselState: { currentSlide, deviceType },
-		} = rest;
-		// onMove means if dragging or swiping in progress.
-		return (
-			<StyledBoxRight onClick={() => onClick()}>
-				{/* <ArrowForwardIosRounded color="inherit" fontSize="small" /> */}
-			</StyledBoxRight>
-		);
-	};
-	const CustomLeftArrow = ({ onClick, ...rest }) => {
-		const {
-			onMove,
-			carouselState: { currentSlide, deviceType },
-		} = rest;
-		// onMove means if dragging or swiping in progress.
-		return (
-			<StyledBoxLeft onClick={() => onClick()}>
-				{/* <ArrowBackIosNewRounded color="inherit" fontSize="small" /> */}
-			</StyledBoxLeft>
-		);
-	};
+	// const CustomRightArrow = ({ onClick, ...rest }) => {
+	// 	const {
+	// 		onMove,
+	// 		carouselState: { currentSlide, deviceType },
+	// 	} = rest;
+	// 	// onMove means if dragging or swiping in progress.
+	// 	return (
+	// 		<StyledBoxRight onClick={() => onClick()}>
+	// 			{/* <ArrowForwardIosRounded color="inherit" fontSize="small" /> */}
+	// 		</StyledBoxRight>
+	// 	);
+	// };
+	// const CustomLeftArrow = ({ onClick, ...rest }) => {
+	// 	const {
+	// 		onMove,
+	// 		carouselState: { currentSlide, deviceType },
+	// 	} = rest;
+	// 	// onMove means if dragging or swiping in progress.
+	// 	return (
+	// 		<StyledBoxLeft onClick={() => onClick()}>
+	// 			{/* <ArrowBackIosNewRounded color="inherit" fontSize="small" /> */}
+	// 		</StyledBoxLeft>
+	// 	);
+	// };
 
 	return (
 		<Box
