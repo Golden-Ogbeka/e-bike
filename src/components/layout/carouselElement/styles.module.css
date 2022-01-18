@@ -1,0 +1,46 @@
+.slider {
+	gap: 18.67px;
+	height: 470px;
+	margin-top: 10px !important;
+}
+
+.smallSlider {
+	gap: 18.67px;
+}
+
+/* .container {
+  overflow-block: inherit !important;
+  height: 100%;
+  position: relative;
+}
+
+.item {
+  overflow-y: visible !important;
+} */
+
+.hoverButton {
+	min-width: 85px !important;
+	height: 40px !important;
+	left: 50% !important;
+	top: 50% !important;
+	position: absolute !important;
+	background: #484848 !important;
+	border-radius: 5px !important;
+	text-transform: none !important;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: all 0.5s;
+}
+
+.imageContainer {
+	position: relative;
+}
+
+.imageContainer:hover .image {
+	opacity: 0.5;
+	width: 202.57px;
+}
+.imageContainer:hover .hoverButton {
+	opacity: 1;
+}

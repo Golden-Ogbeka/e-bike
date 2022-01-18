@@ -1,0 +1,13 @@
+.footerContainer {
+	position: relative;
+	padding-inline: 17.317708333333332vw;
+	background: #fcb72b;
+	padding-top: 8.072916666666666vw;
+	padding-bottom: 7.356770833333333vw;
+}
+
+.footerImage {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
