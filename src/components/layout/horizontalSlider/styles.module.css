@@ -1,0 +1,24 @@
+.container {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+	gap: 20px;
+	align-items: center;
+	overflow-x: auto;
+	flex-wrap: nowrap;
+	/* Hide Sidebar */
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	cursor: grab;
+	cursor: -webkit-grab;
+	background-color: #131313;
+	height: 190px;
+	padding-left: 20px;
+	padding-block: 20px;
+	position: relative;
+	scroll-behavior: smooth;
+}
+
+.container::-webkit-scrollbar {
+	display: none;
+}
