@@ -15,3 +15,8 @@ Run npm start
 
 [https://e-bike-by-golden-ogbeka.vercel.app/](https://e-bike-by-golden-ogbeka.vercel.app/) - E-Bike
 [https://e-bike-by-golden-ogbeka.vercel.app/edvora](https://e-bike-by-golden-ogbeka.vercel.app/edvora) - Edvora
+
+## Routes
+
+- Homeroute ("/")
+- Edvora Route ("/edvora")
